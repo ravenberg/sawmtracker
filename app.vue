@@ -1,5 +1,7 @@
 <template>
   <div>
-    <NuxtWelcome />
+    <v-card>
+      Test
+    </v-card>
   </div>
 </template>
