@@ -4,15 +4,15 @@ import eslintPlugin from 'vite-plugin-eslint';
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
     css: [
-        'vuetify/lib/styles/main.sass',
+        'primevue/resources/themes/saga-blue/theme.css',
+        'primeflex/primeflex.scss',
+        'primevue/resources/primevue.min.css',
+        'primeicons/primeicons.css',
     ],
     build: {
-        transpile: ['vuetify'],
+        transpile: ['primevue'],
     },
     vite: {
-        define: {
-            'process.env.DEBUG': false,
-        },
         // @ts-ignore
         plugins: [
             eslintPlugin(),
